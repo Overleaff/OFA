@@ -8,12 +8,12 @@ log_dir=./refcoco_logs
 save_dir=./refcoco_checkpoints
 mkdir -p $log_dir $save_dir
 
-bpe_dir=../../utils/BPE
-user_dir=../../ofa_module
+bpe_dir=./utils/BPE
+user_dir=./ofa_module
 
-data_dir=../../dataset/refcoco_data
+data_dir=
 data=${data_dir}/refcoco_train.tsv,${data_dir}/refcoco_val.tsv
-restore_file=../../checkpoints/ofa_tiny.pt
+restore_file=
 selected_cols=0,4,2,3
 
 prompt_type_method=prefix
